@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Serie A Products</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/Logo3.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo2.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="premier.html">Premier League</a>
+                        <a href="laliga.html">LaLiga Santander</a>
+                        <a href="seria.html">Serie A</a>
+                        <a href="bundesliga.html">Bundesliga</a>
+                        <a href="ligue1.html">Ligue 1</a>
+                    </div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productsPage.html">Products</a></li>
+                <li><a href="#contactsection">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-right">
+                <form class="search-form" onsubmit="searchItems(event)">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <button class="signup-btn btn-secondary"><a
+                        href="shoppingCart.html"><i class="shop-cart-btn fa
+                        fa-shopping-cart"></i></a></button>
+                <button id="openBtn" class="signup-btn btn-primary">Sign
+                    Up</button>
+            </div>
+        </nav>
+        <div id="popup">
+            <div id="popup-content" class="signup">
+                <h2>Sign Up</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <button id="closeBtn">Close</button>
+            </div>
+        </div>
+        <!-- Product section -->
+        <h1 style="text-align: center;">Serie A Products:</h1>
+        <section class="products">
+            <div class="product">
+                <img src="img/SerieA/atalanta.jpg" alt="Product 1">
+                <h2>Atalanta BC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/bologna.jpg" alt="Product 2">
+                <h2>Bologna FC Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/cremonese.jpg" alt="Product 3">
+                <h2>U.S. Cremonese Home Jersey 2022/23</h2>
+                <p>$23.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/empoli.jpg" alt="Product 4">
+                <h2>Empoli F.C. Home Jersey 2022/23</h2>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/fiorentina.jpg" alt="Product 5">
+                <h2>ACF Fiorentina Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/inter.jpg" alt="Product 6">
+                <h2>Intenzaionale Milan Home Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/juve.jpg" alt="Product 7">
+                <h2>Juventus Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/lazio.jpg" alt="Product 8">
+                <h2>S.S. Lazio Home Jersey 2022/23</h2>
+                <p>$22.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/lecce.jpg" alt="Product 9">
+                <h2>U.S. Lecce Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/milan.jpg" alt="Product 10" width="160px" height="200px">
+                <h2>AC Milan Home Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/SerieA/monza.jpg" alt="Product 11" height="210px">
+                <h2>AC Monza Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/napoli.jpg" alt="Product 12">
+                <h2>S.S.C. Napoli FC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/roma.jpg" alt="Product 13" width="150px" height="200px">
+                <h2>AS Roma Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/sampdoria.jpg" alt="Product 14">
+                <h2>U.C. Sampdoria Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/spezia.jpg" alt="Product 15">
+                <h2>Spezia Calcio Home Jersey 2022/23</h2>
+                <p>$23.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/torino.jpg" alt="Product 16">
+                <h2>Torino FC Home Jersey 2022/23</h2>
+                <p>$26.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/udinese.jpg" alt="Product 17">
+                <h2>Udinese Calcio Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/verona.jpg" alt="Product 18" width="160px" height="200px">
+                <h2>Hellas Verona Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/salernitana.jpg" alt="Product 19">
+                <h2>U.S. Salernitana 1919 Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/SerieA/sassuolo.jpg" alt="Product 20">
+                <h2>U.S Sassuolo Calcio Home Jersey 2022/23</h2>
+                <p>$26.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="contact-links" id="contactsection">
+            <div class="contact-us">
+                <p>Follow Us On:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/dzekoavmedoski/"
+                        target="_blank"><img
+                            src="img/ig.png" width="2.3%px"></a>
+                    <a href="https://www.instagram.com/musoskii/"
+                        target="_blank"><img
+                            src="img/fb.png" width="2.6%px"></a>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="input-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-field1">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="message-box">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="send-button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2023 XStore. All Rights Reserved.</p>
+        </footer>
+        <script src="js/productInfo.js"></script>
+        <script src="js/signup.js"></script>
+    </body>
+</html>

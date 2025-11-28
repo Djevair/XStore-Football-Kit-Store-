@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XSport Products</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/Logo3.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo2.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="premier.html">Premier League</a>
+                        <a href="laliga.html">LaLiga Santander</a>
+                        <a href="seria.html">Serie A</a>
+                        <a href="bundesliga.html">Bundesliga</a>
+                        <a href="ligue1.html">Ligue 1</a>
+                    </div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productsPage.html">Products</a></li>
+                <li><a href="#contactsection">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-right">
+                <form class="search-form" onsubmit="searchItems(event)">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <button class="signup-btn btn-secondary"><a
+                        href="shoppingCart.html"><i class="shop-cart-btn fa
+                        fa-shopping-cart"></i></a></button>
+                <button id="openBtn" class="signup-btn btn-primary">Sign
+                    Up</button>
+            </div>
+        </nav>
+        <div id="popup">
+            <div id="popup-content" class="signup">
+                <h2>Sign Up</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <button id="closeBtn">Close</button>
+            </div>
+        </div>
+        <!-- Product section -->
+        <hr>
+        <h1 style="text-align: center;">Some of our other products you might like:</h1>
+        <section class="products">
+            <div class="product">
+                <img src="img/Products/chel.jpg" alt="Product 1">
+                <h2>Chelsea FC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button class="buy-now" data-product-id="7">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/liv.jpg" alt="Product 2">
+                <h2>Liverpool FC Third Jersey 2020/21</h2>
+                <p>$20.99</p>
+                <button class="buy-now" data-product-id="8">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/psga.jpg" alt="Product 3">
+                <h2>Paris Saint Germain Fourth Jersey 2021/22</h2>
+                <p>$22.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/city.jpg" alt="Product 4">
+                <h2>Manchester City Third Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/mar.jpg" alt="Product 5">
+                <h2>Olympique Marseille Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/cro.jpg" alt="Product 6">
+                <h2>Croatia Away Jersey 2022/23</h2>
+                <p>$35.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/bra.jpg" alt="Product 7">
+                <h2>Brazil Away Jersey 2022/23</h2>
+                <p>$30.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/fra.jpg" alt="Product 8">
+                <h2>France Home Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/net.jpg" alt="Product 9">
+                <h2>Netherlands Home Jersey 2022/23</h2>
+                <p>$34.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Products/senegal.jpg" alt="Product 10">
+                <h2>Senegal Home Jersey 2022/23</h2>
+                <p>$30.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="contact-links" id="contactsection">
+            <div class="contact-us">
+                <p>Follow Us On:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/dzekoavmedoski/"
+                        target="_blank"><img
+                            src="img/ig.png" width="2.3%px"></a>
+                    <a href="https://www.instagram.com/musoskii/"
+                        target="_blank"><img
+                            src="img/fb.png" width="2.6%px"></a>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="input-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-field1">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="message-box">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="send-button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2023 XStore. All Rights Reserved.</p>
+        </footer>
+        <script src="js/productInfo.js"></script>
+        <script src="js/signup.js"></script>
+    </body>
+</html>

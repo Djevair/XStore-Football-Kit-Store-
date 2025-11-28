@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Premier League</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/Logo3.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo2.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="premier.html">Premier League</a>
+                        <a href="laliga.html">LaLiga Santander</a>
+                        <a href="seria.html">Serie A</a>
+                        <a href="bundesliga.html">Bundesliga</a>
+                        <a href="ligue1.html">Ligue 1</a>
+                    </div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productsPage.html">Products</a></li>
+                <li><a href="#contactsection">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-right">
+                <form class="search-form" onsubmit="searchItems(event)">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <button class="signup-btn btn-secondary"><a
+                        href="shoppingCart.html"><i class="shop-cart-btn fa
+                        fa-shopping-cart"></i></a></button>
+                <button id="openBtn" class="signup-btn btn-primary">Sign
+                    Up</button>
+            </div>
+        </nav>
+        <div id="popup">
+            <div id="popup-content" class="signup">
+                <h2>Sign Up</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <button id="closeBtn">Close</button>
+            </div>
+        </div>
+        <!-- Product section -->
+        <h1 style="text-align: center;">Premier League Products:</h1>
+        <section class="products">
+            <div class="product">
+                <img src="img/PremierLeague/chel.jpg" alt="Product 1" class="buy-now" data-product-id="7">
+                <h2>Chelsea FC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/arsenal.jpg" alt="Product 2" class="buy-now" data-product-id="17">
+                <h2>Arsenal FC Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/aston.jpg" alt="Product 3" class="buy-now" data-product-id="18">
+                <h2>Aston Villa Home Jersey 2022/23</h2>
+                <p>$23.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/bournmouth.jpg" alt="Product 4" class="buy-now" data-product-id="19">
+                <h2>Bournemouth Home Jersey 2022/23</h2>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/brent.jpg" alt="Product 5" class="buy-now" data-product-id="20">
+                <h2>Brentford FC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/brighton.jpg" alt="Product 6" class="buy-now" data-product-id="21">
+                <h2>Brighton FC Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/crystal.jpg" alt="Product 7" class="buy-now" data-product-id="22">
+                <h2>Crystal Palace FC Jersey 2022/23</h2>
+                <p>$27.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/everton.jpg" alt="Product 8" class="buy-now" data-product-id="23">
+                <h2>Everton FC Home Jersey 2022/23</h2>
+                <p>$22.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/forest.jpg" alt="Product 9" height="200px" class="buy-now" data-product-id="24">
+                <h2>Nottingham Forest FC Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/fulham.jpg" alt="Product 10" class="buy-now" data-product-id="25">
+                <h2>Fulham FC Home Jersey 2022/23</h2>
+                <p>$26.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/PremierLeague/leeds.jpg" alt="Product 11" class="buy-now" data-product-id="26">
+                <h2>Leeds FC Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/leicester.jpg" alt="Product 12" height="200px" class="buy-now" data-product-id="27">
+                <h2>Leicester City FC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/liverpool.jpg" alt="Product 13" class="buy-now" data-product-id="28">
+                <h2>Liverpool FC Home Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <a href="mancityjersey.html">
+                <img src="img/PremierLeague/mancity.jpg" alt="Product 14" class="buy-now" data-product-id="1"></a>
+                <h2>Manchester City Home Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/manutd.jpg" alt="Product 15" class="buy-now" data-product-id="30">
+                <h2>Manchester United FC Home Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/newcastle.jpg" alt="Product 16" class="buy-now" data-product-id="31">
+                <h2>Newcastle FC Home Jersey 2022/23</h2>
+                <p>$26.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/south.jpg" alt="Product 17" class="buy-now" data-product-id="32">
+                <h2>Southampton FC Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/tot.jpg" alt="Product 18" class="buy-now" data-product-id="2">
+                <h2>Tottenham FC Home Jersey 2022/23</h2>
+                <p>$28.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/west.jpg" alt="Product 19" class="buy-now" data-product-id="34">
+                <h2>West Ham FC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/PremierLeague/wolves.jpg" alt="Product 20" class="buy-now" data-product-id="35">
+                <h2>Wolverhampton Wonderers Home Jersey 2022/23</h2>
+                <p>$26.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="contact-links" id="contactsection">
+            <div class="contact-us">
+                <p>Follow Us On:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/dzekoavmedoski/"
+                        target="_blank"><img
+                            src="img/ig.png" width="2.3%px"></a>
+                    <a href="https://www.instagram.com/musoskii/"
+                        target="_blank"><img
+                            src="img/fb.png" width="2.6%px"></a>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="input-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-field1">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="message-box">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="send-button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2023 XStore. All Rights Reserved.</p>
+        </footer>
+        <script src="js/productInfo.js"></script>
+        <script src="js/signup.js"></script>
+    </body>
+</html>

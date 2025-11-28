@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ligue 1 Products</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/Logo3.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo2.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="premier.html">Premier League</a>
+                        <a href="laliga.html">LaLiga Santander</a>
+                        <a href="seria.html">Serie A</a>
+                        <a href="bundesliga.html">Bundesliga</a>
+                        <a href="ligue1.html">Ligue 1</a>
+                    </div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productsPage.html">Products</a></li>
+                <li><a href="#contactsection">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-right">
+                <form class="search-form" onsubmit="searchItems(event)">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <button class="signup-btn btn-secondary"><a
+                        href="shoppingCart.html"><i class="shop-cart-btn fa
+                        fa-shopping-cart"></i></a></button>
+                <button id="openBtn" class="signup-btn btn-primary">Sign
+                    Up</button>
+            </div>
+        </nav>
+        <div id="popup">
+            <div id="popup-content" class="signup">
+                <h2>Sign Up</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <button id="closeBtn">Close</button>
+            </div>
+        </div>
+        <!-- Product section -->
+        <h1 style="text-align: center;">Ligue 1 Products:</h1>
+        <section class="products">
+            <div class="product">
+                <img src="img/Ligue1/ajaccio.jpg" alt="Product 1">
+                <h2>AC Ajaccio Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/angers.jpg" alt="Product 2">
+                <h2>Angers SCO Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/auxerre.jpg" alt="Product 3">
+                <h2>AJ Auxerre Home Jersey 2022/23</h2>
+                <p>$23.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/brest.jpg" alt="Product 4">
+                <h2>Stade Brestois 29 Home Jersey 2022/23</h2>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/clermont.jpg" alt="Product 5">
+                <h2>Clermont Foot 63 Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/lens.jpg" alt="Product 6">
+                <h2>RC Lens Home Jersey 2022/23</h2>
+                <p>$27.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/lille.jpg" alt="Product 7">
+                <h2>LOSC Lille 2022/23</h2>
+                <p>$26.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/lorient.jpg" alt="Product 8">
+                <h2>FC Lorient Home Jersey 2022/23</h2>
+                <p>$22.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/lyon.jpg" alt="Product 9">
+                <h2>Olympique Lyonnais Home Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/mar.jpg" alt="Product 10">
+                <h2>Olympique Marseille Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/Ligue1/monaco.jpg" alt="Product 11">
+                <h2>AS Monaco Home Jersey 2022/23</h2>
+                <p>$27.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/montpellier.jpg" alt="Product 12">
+                <h2>Montpellier Herault SC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/nantes.jpg" alt="Product 13">
+                <h2>FC Nantes Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/nice.jpg" alt="Product 14">
+                <h2>OGC Nice Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/psg.jpg" alt="Product 15">
+                <h2>Paris Saint Germain Home Jersey 2022/23</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/reims.jpg" alt="Product 16">
+                <h2>Stade de Reims Home Jersey 2022/23</h2>
+                <p>$26.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/rennes.jpg" alt="Product 17">
+                <h2>Stade Rennais FC Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/strasbourg.jpg" alt="Product 18">
+                <h2>RC Strasbourg Alsace Home Jersey 2022/23</h2>
+                <p>$24.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/toulouse.jpg" alt="Product 19">
+                <h2>Toulouse FC Home Jersey 2022/23</h2>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/Ligue1/troyes.jpg" alt="Product 20">
+                <h2>ES Troyes AC Home Jersey 2022/23</h2>
+                <p>$26.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="contact-links" id="contactsection">
+            <div class="contact-us">
+                <p>Follow Us On:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/dzekoavmedoski/"
+                        target="_blank"><img
+                            src="img/ig.png" width="2.3%px"></a>
+                    <a href="https://www.instagram.com/musoskii/"
+                        target="_blank"><img
+                            src="img/fb.png" width="2.6%px"></a>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="input-field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-field1">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="message-box">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="send-button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2023 XStore. All Rights Reserved.</p>
+        </footer>
+        <script src="js/productInfo.js"></script>
+        <script src="js/signup.js"></script>
+    </body>
+</html>
