@@ -1,0 +1,33 @@
+.shop-cart h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+.shop-cart div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.cart-item:last-child {
+  border-bottom: none;
+}
+.item-name {
+  font-weight: bold;
+}
+.item-price {
+  color: #888;
+}
+.cart-total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+}

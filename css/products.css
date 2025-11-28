@@ -1,0 +1,81 @@
+/*flex container*/
+.flex-container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 55px;
+  padding-bottom: 80px;
+  gap: 50px;
+}
+/* CSS styles for product section */
+.scrollable-section {
+  width: 140px;
+  height: 400px;
+  overflow: auto;
+}
+.scrollbar {
+  width: 12px;
+  background-color: #f1f1f1;
+}
+.description {
+  height: 500px;
+  width: 500px;
+  background-color: #e6e6e6;
+  text-align: center;
+  padding-top: 30px;
+  box-shadow: 0 2px 6px #aaaaaa;
+}
+.description p {
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.description button {
+  background-color: #449d44;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: #aaaaaa;
+}
+.description button:hover {
+  background-color: #296929;
+}
+.description table {
+  padding-left: 45px;
+}
+.description td {
+  border: 1px solid rgb(0, 3, 3);
+  padding: 10px;
+  border-radius: 5px;
+}
+/* Zooming photo */
+.zoom-img {
+  overflow: hidden;
+  position: relative;
+}
+img#product-images {
+  transition: transform 0.2s ease;
+}
+/* Add to cart */
+.add-to-cart {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.product-image {
+  position: relative;
+  display: inline-block;
+}
+.product-image img {
+  transition: transform 0.3s;
+}
+.product-image:hover img {
+  transform: scale(1.1);
+}
+.scrollable-section {
+  padding-top: 30px;
+}
